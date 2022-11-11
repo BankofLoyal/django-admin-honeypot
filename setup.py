@@ -6,7 +6,7 @@ try:
     from setuptools import setup, find_packages
 except ImportError:
     from distutils.core import setup, find_packages
-
+    
 setup(
     name='django-admin-honeypot',
     version=__version__,
@@ -17,6 +17,7 @@ setup(
         'Framework :: Django',
         'Framework :: Django :: 2.2',
         'Framework :: Django :: 3.0',
+        'Framework :: Django :: 4.1',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
@@ -27,6 +28,8 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         ],
     keywords='django admin honeypot trap',
@@ -39,6 +42,7 @@ setup(
     packages=find_packages(),
     zip_safe=False,
     install_requires=[
+        'django>=3.0,<4.2',
         'django-ipware',
     ]
 )
