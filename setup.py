@@ -42,7 +42,7 @@ setup(
     packages=find_packages(),
     zip_safe=False,
     install_requires=[
-        'django>=3.0,<5.0',
+        'django>=3.0',
         'django-ipware',
     ]
 )
